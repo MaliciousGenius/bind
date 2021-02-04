@@ -68,4 +68,4 @@ RUN cp -R /etc/bind /etc/bind.orig ;
 # added entrypoint
 COPY entrypoint.sh /entrypont.sh
 ENTRYPOINT ["/entrypont.sh"]
-CMD ["/usr/sbin/named", "-c", "/etc/bind/named.conf", "-g", "-u", "named"]
+CMD ["/usr/sbin/named", "-c", "/etc/bind/named.conf"]
