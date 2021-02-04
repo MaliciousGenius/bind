@@ -1,0 +1,9 @@
+version: '3.6'
+
+services:  
+  bind:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: maliciousgenius/bind:latest
+    container_name: bind
